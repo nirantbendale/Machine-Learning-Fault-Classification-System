@@ -10,13 +10,13 @@ This project develops a multi-class machine learning system for fault type class
    - Architecture: 64-32-4 layer structure with dropout regularization
    - Softmax activation for multi-class classification
 
-![image1]()
+![nn_lime](nn_lime.png)
 
 2. **Decision Tree Classifier**
    - Provides interpretable decision boundaries
    - Visualized using `dtreeviz` for enhanced understanding
 
-![image1]()
+![dt_lime](dt_lime.png)
 
 
 3. **Random Forest Classifier**
@@ -24,7 +24,9 @@ This project develops a multi-class machine learning system for fault type class
    - Performed 5-fold stratified cross-validation
    - Comprehensive feature importance analysis
 
-![image1]()
+![rf](rf.png)
+
+![lime_rf](lime_rf.png)
 
 4. **XGBoost Classifier**
    - Utilized GridSearchCV for hyperparameter tuning
@@ -33,7 +35,12 @@ This project develops a multi-class machine learning system for fault type class
      - Max tree depth
      - Learning rate
      - Subsample and feature sampling ratios
-![image1]()
+
+![xgboost](xgboost.png)
+
+![lime_xgboost](lime_xgboost.png)
+
+![xgboost_shap](xgboost_shap.png)
 
 ## Key Techniques
 - **Model Interpretability**:
@@ -87,13 +94,3 @@ pip install pandas numpy scikit-learn keras xgboost shap lime matplotlib dtreevi
 - Feature importance plots
 - SHAP summary plots
 - LIME explanations for individual predictions
-
-## Potential Applications
-- Industrial fault detection
-- Predictive maintenance
-- Complex system diagnostics
-
-## Future Work
-- Experiment with additional models
-- Enhance feature engineering
-- Explore advanced interpretability techniques
